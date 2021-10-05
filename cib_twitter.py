@@ -166,7 +166,7 @@ def main(argv):
 	count	=	0
 	size	=	len(df.index)
 
-	print("Procurando comportamento inautêntico coordenado....")	
+	print("Looking for coordinated inauthentic behavior....")	
 	for index,tweet in df.iterrows():
 		if not count%100:
 			p	=	(1.*count/size)*100	
