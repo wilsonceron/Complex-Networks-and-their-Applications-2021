@@ -131,7 +131,7 @@ def main(argv):
 	df					=	df.fillna('')
 	df['created_at']	=	pd.to_datetime(df.created_at, format="%Y-%m-%dT%H:%M:%S.%f", errors='ignore')
 
-	mask 	=	(df['created_at'] >=datetime(2014, 1, 1)) & (df['created_at'] <= datetime(2021, 8, 31))
+	mask 	=	(df['created_at'] >=datetime(2020, 1, 1)) & (df['created_at'] <= datetime(2021, 4, 30))
 	df		=	df.loc[mask]
 	df		=	df.sort_values('created_at',ascending=True)
 
